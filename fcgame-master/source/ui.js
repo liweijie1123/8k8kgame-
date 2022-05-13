@@ -15,7 +15,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
+var urlinfo = window.location.href,//获取url 
+value = urlinfo.split("?")[1].split("=")[1]; //拆分url得到”=”后面的参数 
+console.log(decodeURI(value))
 JSNES.DummyUI = function(nes) {
     this.nes = nes;
     this.enable = function() {};
@@ -57,11 +59,9 @@ if (typeof jQuery !== 'undefined') {
                 /*
                  * ROM loading
                  */
-                // self.romSelect.change(function() {
-                //     
-                // });
                 self.loadROM();
                 /*
+                
                  * Buttons
                  */
                 self.buttons.pause.click(function() {
@@ -665,10 +665,10 @@ if (typeof jQuery !== 'undefined') {
             UI.prototype = {
                 loadROM: function() {
                     var self = this;
-                    // self.romSelect.val()
+                    var a = value
                     self.updateStatus("Downloading...");
                     $.ajax({
-                        url: escape('roms/other/Kage.nes'),
+                        url: escape(a),
                         xhr: function() {
                             var xhr = $.ajaxSettings.xhr();
                             if (typeof xhr.overrideMimeType !== 'undefined') {
@@ -743,22 +743,9 @@ if (typeof jQuery !== 'undefined') {
                 },
 
                 setRoms: function(roms) {
-                    this.romSelect.children().remove();
-                    $("<option>选择游戏...</option>").appendTo(this.romSelect);
-                    for (var groupName in roms) {
-                        if (roms.hasOwnProperty(groupName)) {
-                            var optgroup = $('<optgroup></optgroup>').
-                            attr("label", groupName);
-                            for (var i = 0; i < roms[groupName].length; i++) {
-                                $('<option>' + roms[groupName][i][0] + '</option>')
-                                    .attr("value", roms[groupName][i][1])
-                                    .appendTo(optgroup);
-                            }
+                            var optgroup = $('<div id = rom>'+roms.url+'</div>')
                             this.romSelect.append(optgroup);
-                        }
-                    }
-                },
-
+                    },
                 writeAudio: function(samples) {
                     //return this.dynamicaudio.writeInt(samples);
                     // Use fallback if available and return early

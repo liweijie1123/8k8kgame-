@@ -26,6 +26,7 @@ $(window).scroll(function () {
 
 });
 
+
 $.getJSON("data.json", function(data) {
     var someGame = template('someGame', data);
     // 5.将拼接好的html字符串添加到页面中。
@@ -38,3 +39,4 @@ $.getJSON("data.json", function(data) {
 
 var a = document.querySelector('iframe').src
 alert(a)
+
