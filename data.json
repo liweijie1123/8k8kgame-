@@ -8,7 +8,7 @@
         {
             "name": "超级玛丽",
             "url": "img/2.png",
-            "href": "fcgame-master/index.html?value=roms/rom1/(W) Super Mario Bros. [!].nes"
+            "href": "fcgame-master/index.html?value=roms/roms/like/chaojimali.nes"
         },
         {
             "name": "忍者神龟",
@@ -219,7 +219,7 @@
         {
             "name": "热血新纪录(日版)",
             "url": "img/28.png",
-            "href": "",
+            "href": "fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -235,7 +235,7 @@
         {
             "name": "冒险岛(日版)",
             "url": "img/29.png",
-            "href": "",
+            "href": "fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "冒险"
@@ -251,7 +251,7 @@
         {
             "name": "冒险岛",
             "url": "img/30.png",
-            "href": "",
+            "href": "fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"

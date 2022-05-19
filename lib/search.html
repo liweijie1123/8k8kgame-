@@ -8,14 +8,14 @@
   <title>Game-nav</title>
   <!-- 新 Bootstrap5 核心 CSS 文件 -->
   <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/Normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/Normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
   <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
-  <script src="js/art-template.js"></script>
+  <script src="../js/art-template.js"></script>
 
 </head>
 
@@ -43,9 +43,7 @@
       </div>
     </div>
     <div class="g-body">
-      <div class="m-some_game">
-      </div>
-      <div class="m-all_game"i>
+      <div class="m-search_game">
       </div>
     </div>
     <footer class="footer">
@@ -59,58 +57,7 @@
     </footer>
   </div>
 
-
-  <script type="text/template" id="someGame">
-  <div class="container margin-bu">
-    <h3 style="text-align: left; margin-bottom: 10px;">热门FC
-      <a class="more" href="">更多></a>
-    </h3>
-    <div class="row" id="hotFC">
-      <ul class="tm_list">
-        {{each HotFC}}
-        <li class="hot-li"><a href="{{$value.href}}"><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a></li>
-         {{/each}}
-      </ul>
-    </div>
-  </div>
-  <div class="container margin-bu">
-    <h3 style="text-align: left; margin-bottom: 10px;">街机
-      <a class="more" href="">更多></a>
-    </h3>
-    <div class="row">
-      <ul class="tm_list">
-        {{each HotJJ}}
-       <li class="hot-li"><a href=""><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a></li>
-        {{/each}}
-      </ul>
-    </div>
-  </div>
-  <div class="container margin-bu">
-    <h3 style="text-align: left; margin-bottom: 10px;">热门GBA
-      <a class="more" href="">更多></a>
-    </h3>
-    <div class="row">
-      <ul class="tm_list">
-        {{each HotGBA}}
-       <li class="hot-li"><a href="{{$value.href}}"><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a></li>
-        {{/each}}
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <h3 style="text-align: left; margin-bottom: 10px;">热门h5小游戏
-      <a class="more" href="">更多></a>
-    </h3>
-    <div class="row">
-      <ul class="tm_list">
-        {{each HotH5}}
-       <li class="hot-li"><a href=""><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a></li>
-        {{/each}}
-      </ul>
-    </div>
-  </div>
-</script>
-  <script type="text/template" id="allGame">
+  <script type="text/template" id="searchGame">
   <div class="container">
     <div class="container">
           <h3 style="text-align: left; margin-bottom: 60px;">所有游戏
@@ -145,7 +92,7 @@
       <span class="badge bg-success">{{$value.type}}</span>
     {{/each}}
 </script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
