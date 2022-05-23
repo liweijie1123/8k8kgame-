@@ -170,6 +170,134 @@
     "allGame": [
         {
             "name": "魂斗罗",
+            "url": "img/1.png",
+            "href": "fcgame-master/index.html?value=roms/Contra/Contra1(U)30.nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "超级玛丽",
+            "url": "img/2.png",
+            "href": "fcgame-master/index.html?value=roms/roms/like/chaojimali.nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "忍者神龟",
+            "url": "img/3.png",
+            "href": "fcgame-master/index.html?value=roms/like/renzheshenguigedou.nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "雪人兄弟",
+            "url": "img/4.png",
+            "href": "fcgame-master/index.html?value=roms/like/xuerenxiongdi.nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "魂斗罗美版",
+            "url": "img/5.png",
+            "href": "fcgame-master/index.html?value=roms/like/Super Contra (J).nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "BATTLE CITY",
+            "url": "img/6.png",
+            "href": "",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "SLAND",
+            "url": "img/7.png",
+            "href": "",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "热血格斗传说",
+            "url": "img/8.png",
+            "href": "",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+        {
+            "name": "魂斗罗",
             "url": "img/25.png",
             "href": "fcgame-master/index.html?value=roms/Contra/Contra1(U)30.nes",
             "type": [

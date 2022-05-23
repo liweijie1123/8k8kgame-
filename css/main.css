@@ -252,6 +252,7 @@
         align-self: center;
         width: 25%;
         justify-content: space-around;
+        transform: 0.5s;
     }
 
     .m-hd {
