@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game-nav</title>
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/Normalize.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+  <script src="https://cdn.stticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-boottrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="g-index">
+    <div class="g-head">
+      <div class="m-hd">
+        <div class="m-logo">
+          <img  src="/static/img/4.png" alt="">
+        </div>
+       
+      </div>
+    </div>
+    <div class="g-body">
+     <div class="m-haveGame">
+       <div class="m-userbg">
+          <div class="m-useLeft">
+            <div class="returnhome">
+              <svg t="1653832428499" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1329" width="32" height="32"><path d="M209.92 988.16c-15.36 0-30.72-15.36-30.72-30.72s15.36-30.72 30.72-30.72h471.04c153.6 0 281.6-128 281.6-281.6s-128-281.6-281.6-281.6H102.4l220.16 220.16c5.12 5.12 10.24 10.24 10.24 20.48 0 5.12-5.12 15.36-10.24 20.48-5.12 5.12-10.24 10.24-20.48 10.24-5.12 0-15.36-5.12-20.48-10.24L10.24 353.28c-5.12-5.12-10.24-10.24-10.24-20.48 0-5.12 5.12-15.36 10.24-20.48L281.6 40.96c5.12-5.12 10.24-10.24 20.48-10.24 5.12 0 15.36 5.12 20.48 10.24 0 10.24 5.12 15.36 5.12 25.6 0 5.12-5.12 15.36-10.24 20.48L97.28 307.2h583.68a343.04 343.04 0 0 1 0 686.08H209.92z" fill="#606266" p-id="1330"></path></svg>
+            </div>
+            {{each User}}
+            <img src="{{$value.headimg}}" alt="">
+            <h2>{{$value.nickname}}</h2>
+            {{/each}}
+
+          </div>
+          <div class="m-useRift">
+            <h4>历史游戏记录</h4>
+            <div class="histeryGame">
+              {{each HotFC}}
+              <div>
+                <a href="{{$value.href}}"><img src="{{$value.url}}" alt=""
+                  class="tm_list-img">{{$value.name}}</a>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text">
+          <span>关于 |</span>
+          <span>意见反馈 |</span>
+          <span>联系方式</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/user.js"></script>
+
+</body>
+
+</html>

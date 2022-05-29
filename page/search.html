@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="A-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game-nav</title>
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/Normalize.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+  <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="g-index">
+    <div class="g-head">
+      <div class="m-hd">
+        <div class="m-logo">
+          <img src="/static/img/4.png" alt="">
+        </div>
+        <div class="m-title">
+          <span>小霸王、其乐无穷</span>
+        </div>
+        <div class="m-search">
+          <input type="text" value="" class="in">
+          <span class="m-search-button"><svg t="1652517306618" class="icon" viewBox="0 0 1024 1024" version="1.1"
+              xmlns="http://www.w3.org/2000/svg" p-id="1891" width="16" height="16">
+              <path
+                d="M797.525333 752.266667c62.069333-72.736 97.28-165.002667 97.28-262.186667C894.816 266.528 713.621333 85.333333 490.08 85.333333 266.538667 85.333333 85.333333 266.538667 85.333333 490.069333 85.333333 713.610667 266.538667 894.826667 490.069333 894.826667a404.693333 404.693333 0 0 0 118.208-17.546667 32 32 0 0 0-18.666666-61.216 340.693333 340.693333 0 0 1-99.541334 14.762667C301.888 830.816 149.333333 678.261333 149.333333 490.069333 149.333333 301.888 301.888 149.333333 490.069333 149.333333 678.261333 149.333333 830.826667 301.888 830.826667 490.069333c0 89.28-35.381333 173.696-97.141334 237.322667a36.992 36.992 0 0 0 0.384 51.925333l149.973334 149.973334a32 32 0 0 0 45.258666-45.248L797.525333 752.266667z"
+                p-id="1892"></path>
+            </svg></span>
+        </div>
+        <div class="m-meun">
+          <li><img src="/static/img/head/1.png" alt="">FC</li>
+          <li><img src="/static/img/head/2.png" alt="">街机</li>
+          <li><img src="/static/img/head/3.png" alt="">GBA</li>
+          <li><img src="/static/img/head/4.png" alt="">H5</li>
+        </div>
+      </div>
+    </div>
+    <div class="g-body">
+      <div class="m-all_game">
+        <div class="container">
+          <div class="container">
+            <h3 style="text-align: left; margin-bottom: 60px;">搜索结果：
+            </h3>
+            <div class="row">
+              {{each allGame}}
+              <div class="col-md-3 col-xs-6">
+                <div class="card card-blog" style="height: 350px;">
+                  <a class="game" href="{{$value.href}}">
+                    <div class="card-image">
+                      <img src="{{$value.url}}" alt="" class="img img-raised" height="233px">
+                      <div class="ripple-cont"></div>
+                    </div>
+                  </a>
+                  <div class="table container">
+                    {{include './tag.html' $value}}
+                    <div class="card-caption">
+                      <a href="{{$value.href}}">
+                        {{$value.name}}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="text">
+          <span>关于 |</span>
+          <span>意见反馈 |</span>
+          <span>联系方式</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
