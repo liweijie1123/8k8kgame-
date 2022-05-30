@@ -19,7 +19,7 @@ var f = 0;
 var q = 0;
 var searchdata;
 
-app.get('/', (req, resp) => {
+app.get('/', async (req, resp) => {
     fs.readFile('data/gamedata.json',(err,data)=>{
         if(!err){
             let gamedata = data.toString();
@@ -31,7 +31,7 @@ app.get('/', (req, resp) => {
         }
     })
 })
-app.get('/user', (req, resp) => {
+app.get('/user', async (req, resp) => {
     fs.readFile('data/gamedata.json',(err,data)=>{
         if(!err){
             var userdata
@@ -56,7 +56,7 @@ app.get('/user', (req, resp) => {
         }
     })
 })
-app.get('/userCenter', (req, resp) => {
+app.get('/userCenter', async (req, resp) => {
     fs.readFile('data/gamedata.json',(err,data)=>{
         if(!err){
             var userdata
@@ -90,7 +90,7 @@ app.get('/register', async (req, resp) => {
     resp.end(data);
 })
 
-app.post('/api/register',(req, res) => {
+app.post('/api/register', async (req, res) => {
     fs.readFile('data/data.json', (err, data) => {
         let use = data.toString();
         
@@ -114,7 +114,7 @@ app.post('/api/register',(req, res) => {
     })
 
 })
-app.post('/api/login',  (req, res) => {
+app.post('/api/login', async (req, res) => {
     // console.log(req.body);
     fs.readFile('data/data.json', (err, data) => {
         let use = data.toString();
@@ -135,7 +135,7 @@ app.post('/api/login',  (req, res) => {
 })
 
 
-app.get('/api/search',(req, res) => {
+app.get('/api/search', async(req, res) => {
     // console.log(req.query);
     fs.readFile('data/gamedata.json', (err, data) => {
         let use = data.toString();

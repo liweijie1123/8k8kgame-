@@ -6,6 +6,11 @@
             "href": "/static/fcgame-master/index.html?value=roms/Contra/Contra1(U)30.nes"
         },
         {
+            "name": "魔塔终极增强版",
+            "url": "/static/img/45.png",
+            "href": "https://goodgoodgo.github.io/"
+        },
+        {
             "name": "超级玛丽",
             "url": "/static/img/2.png",
             "href": "/static/fcgame-master/index.html?value=roms/roms/like/chaojimali.nes"
@@ -30,11 +35,7 @@
             "url": "/static/img/6.png",
             "href": ""
         },
-        {
-            "name": "SLAND",
-            "url": "/static/img/7.png",
-            "href": ""
-        },
+
         {
             "name": "热血格斗传说",
             "url": "/static/img/8.png",
