@@ -18,6 +18,15 @@ json 改一下
 
 宝塔：username: fp5gftcl
 password: 57d3f536
-
+{
+    "data": [
+        {
+            "username": "123",
+            "password": "123",
+            "nickname":"李炜杰",
+            "headimg":"static/img/headimg/1.jpeg"
+        }
+    ]
+}
 
 

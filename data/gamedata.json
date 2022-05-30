@@ -13,7 +13,7 @@
         {
             "name": "超级玛丽",
             "url": "/static/img/2.png",
-            "href": "/static/fcgame-master/index.html?value=roms/roms/like/chaojimali.nes"
+            "href": "/static/fcgame-master/index.html?value=roms/like/Mario Bros.nes"
         },
         {
             "name": "忍者神龟",
@@ -28,144 +28,144 @@
         {
             "name": "魂斗罗美版",
             "url": "/static/img/5.png",
-            "href": "/static/fcgame-master/index.html?value=roms/like/Super Contra (J).nes"
+            "href": "/static/fcgame-master/index.html?value=roms/Contra/Contra1(U)30F.nes"
         },
         {
             "name": "BATTLE CITY",
             "url": "/static/img/6.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value=roms/rom1/(Ch)Tank1990.nes"
         },
 
         {
             "name": "热血格斗传说",
             "url": "/static/img/8.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value=roms/lj65/lj65.nes"
         }
     ],
     "HotGBA": [
         {
             "name": "口袋妖怪系列",
             "url": "/static/img/17.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "恶魔城系列",
             "url": "/static/img/18.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "牧场物语系列",
             "url": "/static/img/19.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "召唤之夜-铸剑物语",
             "url": "/static/img/2.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "塞尔达传说-缩小帽",
             "url": "/static/img/21.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "火焰纹章系列",
             "url": "/static/img/22.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "超级马里奥",
             "url": "/static/img/23.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "超级机器人大战",
             "url": "/static/img/24.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         }
     ],
     "HotJJ": [
         {
             "name": "三国战纪系列",
             "url": "/static/img/9.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "三国志",
             "url": "/static/img/1.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "合金弹头系列",
             "url": "/static/img/11.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "拳皇系列",
             "url": "/static/img/12.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "名将",
             "url": "/static/img/13.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "恐龙快打",
             "url": "/static/img/14.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "西游释厄传",
             "url": "/static/img/15.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "街头霸王",
             "url": "/static/img/16.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         }
     ],
     "HotH5": [
         {
             "name": "导火索",
             "url": "/static/img/h5/1.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "猪猪侠",
             "url": "/static/img/h5/2.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "火箭小子",
             "url": "/static/img/h5/3.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "滚落的方块",
             "url": "/static/img/h5/4.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "死亡木棍",
             "url": "/static/img/h5/5.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": " 美好的一天",
             "url": "/static/img/h5/6.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": " WannIa Be The Guy",
             "url": "/static/img/h5/7.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         },
         {
             "name": "音乐线",
             "url": "/static/img/h5/8.png",
-            "href": ""
+            "href": "/static/fcgame-master/index.html?value="
         }
     ],
     "allGame": [
@@ -236,7 +236,7 @@
         {
             "name": "魂斗罗美版",
             "url": "/static/img/5.png",
-            "href": "/static/fcgame-master/index.html?value=roms/like/Super Contra (J).nes",
+            "href": "/static/fcgame-master/index.html?value=roms/like/roms/1981/5.nes",
             "type": [
                 {
                     "type": "FC"
@@ -252,7 +252,7 @@
         {
             "name": "BATTLE CITY",
             "url": "/static/img/6.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "FC"
@@ -268,7 +268,7 @@
         {
             "name": "SLAND",
             "url": "/static/img/7.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "FC"
@@ -284,7 +284,7 @@
         {
             "name": "热血格斗传说",
             "url": "/static/img/8.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "FC"
@@ -396,7 +396,7 @@
         {
             "name": "热血时代剧",
             "url": "/static/img/31.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "热血"
@@ -412,7 +412,7 @@
         {
             "name": "冒险岛2",
             "url": "/static/img/32.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -428,7 +428,7 @@
         {
             "name": "热血曲棍球",
             "url": "/static/img/33.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -444,7 +444,7 @@
         {
             "name": "冒险岛2(美版)",
             "url": "/static/img/34.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -460,7 +460,7 @@
         {
             "name": "热血格斗传说",
             "url": "/static/img/35.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "格斗"
@@ -476,7 +476,7 @@
         {
             "name": "冒险岛3(日版)",
             "url": "/static/img/36.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -492,7 +492,7 @@
         {
             "name": "热血物语(日版)",
             "url": "/static/img/37.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -508,7 +508,7 @@
         {
             "name": "冒险岛3(美版)",
             "url": "/static/img/38.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "PC"
@@ -524,7 +524,7 @@
         {
             "name": "热血物语(欧版)",
             "url": "/static/img/39.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "冒险"
@@ -540,7 +540,7 @@
         {
             "name": "冒险岛4",
             "url": "/static/img/40.png",
-            "href": "",
+            "href": "/static/fcgame-master/index.html?value=",
             "type": [
                 {
                     "type": "FC"

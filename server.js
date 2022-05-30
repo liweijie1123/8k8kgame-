@@ -103,7 +103,8 @@ app.post('/api/register', async (req, res) => {
             }
         }
         if (f == 0) {
-            req.body.headimg='/static/img/headimg/2.jpeg'
+            var n  = Math.round(Math.random()*4+0);
+            req.body.headimg='/static/img/headimg/'+n+'.jpeg'
             use.data.push(req.body);
             // console.log(req.body);
             // console.log(use);
@@ -114,7 +115,7 @@ app.post('/api/register', async (req, res) => {
     })
 
 })
-app.post('/api/login', async (req, res) => {
+app.post('/api/login',  (req, res) => {
     // console.log(req.body);
     fs.readFile('data/data.json', (err, data) => {
         let use = data.toString();
@@ -135,7 +136,7 @@ app.post('/api/login', async (req, res) => {
 })
 
 
-app.get('/api/search', async(req, res) => {
+app.get('/api/search', (req, res) => {
     // console.log(req.query);
     fs.readFile('data/gamedata.json', (err, data) => {
         let use = data.toString();
@@ -152,6 +153,7 @@ app.get('/api/search', async(req, res) => {
     })
 
 })
+
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
 })
