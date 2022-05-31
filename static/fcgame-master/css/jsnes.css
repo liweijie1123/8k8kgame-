@@ -24,23 +24,10 @@ html {
     user-select: none
 }
 canvas.nes-screen {
-    width: 85%;
+    width: 100%;
     height: 100%;
 }
-.main {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 80%;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 0 0 0 5px #ffffff, 0 0 0 20px #474f51;
-    background: #ffffff;
-    max-height: 95%;
-    padding: 10px
-}
+
 
 .action-area,
 .controller,
@@ -316,6 +303,20 @@ button.left.joydirection {
 }
 
 @media screen and (orientation:portrait) {
+    .main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 0 5px #ffffff, 0 0 0 20px #474f51;
+        background: #ffffff;
+        max-height: 100%;
+        padding: 10px
+    }
 
     .function-area,
     .function::after,
@@ -379,6 +380,10 @@ button.left.joydirection {
     .action button:first-child {
         margin-right: 20px
     }
+    .returnH{
+        position: absolute;
+        z-index: 99;
+    }
 }
 @media (min-width: 940px){    
     .controller {
@@ -386,5 +391,22 @@ button.left.joydirection {
     }
     .action-area {
         display: none;
+    }
+    .returnH{
+        display: none;
+    }
+    .main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 70%;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 0 5px #ffffff, 0 0 0 20px #474f51;
+        background: #ffffff;
+        max-height: 90%;
+        padding: 10px
     }
 }

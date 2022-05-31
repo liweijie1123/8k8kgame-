@@ -1,5 +1,69 @@
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="email=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="full-screen" content="yes"><meta name="browsermode" content="application"><meta name="x5-orientation" content="landscape"><meta name="x5-fullscreen" content="true"><meta name="x5-page-mode" content="app"><title>happy</title><link href="css/jsnes.css" rel="stylesheet" type="text/css"></head><body><audio style="display:none; height: 0" id="bg-music" preload="auto" src="bgm.mp3"></audio><div class="main"><div class="panel"><div class="controller-area"><div class="controller"><div id="controls-direction"><button role="BUTTON_UP" class="up joydirection" id="joystick_btn_up">up</button> <button role="BUTTON_RIGHT" class="right joydirection" id="joystick_btn_right">right</button> <button role="BUTTON_DOWN" class="down joydirection" id="joystick_btn_down">down</button> <button role="BUTTON_LEFT" class="left joydirection" id="joystick_btn_left">left</button></div></div></div><div class="function-area"><div class="screen"><div id="emulator" align="center" style="width:100%;"></div></div><div class="function"><button class="controls-center-select joybtn" id="joystick_btn_select" role="BUTTON_SELECT">Select</button> <button class="controls-center-start joybtn" id="joystick_btn_start" role="BUTTON_START">Pause</button></div></div><div class="action-area"><div class="action"><div id="controls-fire"><button class="a joybtn" role="BUTTON_A" id="joystick_btn_A">A</button> <button class="b joybtn" role="BUTTON_B" id="joystick_btn_B">B</button><!-- <button class="c joybtn" role="BUTTON_C" id="joystick_btn_C">C</button>
-                        <button class="d joybtn" role="BUTTON_D" id="joystick_btn_D">D</button> --></div></div></div></div></div></body><script src="lib/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script><script src="lib/dynamicaudio-min.js" type="text/javascript" charset="utf-8"></script><script src="source/nes.js" type="text/javascript" charset="utf-8"></script><script src="source/utils.js" type="text/javascript" charset="utf-8"></script><script src="source/cpu.js" type="text/javascript" charset="utf-8"></script><script src="source/keyboard.js" type="text/javascript" charset="utf-8"></script><script src="source/mappers.js" type="text/javascript" charset="utf-8"></script><script src="source/papu.js" type="text/javascript" charset="utf-8"></script><script src="source/ppu.js" type="text/javascript" charset="utf-8"></script><script src="source/rom.js" type="text/javascript" charset="utf-8"></script><script src="source/ui.js" type="text/javascript" charset="utf-8"></script><script>$('.joy').click(function () {
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="landscape">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>happy</title>
+    <link href="css/jsnes.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="returnH">
+            <svg t="1653832428499" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1329" width="32" height="32"><path d="M209.92 988.16c-15.36 0-30.72-15.36-30.72-30.72s15.36-30.72 30.72-30.72h471.04c153.6 0 281.6-128 281.6-281.6s-128-281.6-281.6-281.6H102.4l220.16 220.16c5.12 5.12 10.24 10.24 10.24 20.48 0 5.12-5.12 15.36-10.24 20.48-5.12 5.12-10.24 10.24-20.48 10.24-5.12 0-15.36-5.12-20.48-10.24L10.24 353.28c-5.12-5.12-10.24-10.24-10.24-20.48 0-5.12 5.12-15.36 10.24-20.48L281.6 40.96c5.12-5.12 10.24-10.24 20.48-10.24 5.12 0 15.36 5.12 20.48 10.24 0 10.24 5.12 15.36 5.12 25.6 0 5.12-5.12 15.36-10.24 20.48L97.28 307.2h583.68a343.04 343.04 0 0 1 0 686.08H209.92z" fill="#606266" p-id="1330"></path></svg>
+        </div>
+        <div class="panel">
+            <div class="controller-area">
+                <div class="controller">
+                    <div id="controls-direction"><button role="BUTTON_UP" class="up joydirection"
+                            id="joystick_btn_up">up</button> <button role="BUTTON_RIGHT" class="right joydirection"
+                            id="joystick_btn_right">right</button> <button role="BUTTON_DOWN" class="down joydirection"
+                            id="joystick_btn_down">down</button> <button role="BUTTON_LEFT" class="left joydirection"
+                            id="joystick_btn_left">left</button></div>
+                </div>
+            </div>
+            <div class="function-area">
+                <div class="screen">
+                    <div id="emulator" align="center" style="width:100%;"></div>
+                </div>
+                <div class="function"><button class="controls-center-select joybtn" id="joystick_btn_select"
+                        role="BUTTON_SELECT">Select</button> <button class="controls-center-start joybtn"
+                        id="joystick_btn_start" role="BUTTON_START">Pause</button></div>
+            </div>
+            <div class="action-area">
+                <div class="action">
+                    <div id="controls-fire"><button class="a joybtn" role="BUTTON_A" id="joystick_btn_A">A</button>
+                        <button class="b joybtn" role="BUTTON_B" id="joystick_btn_B">B</button>
+                        <!-- <button class="c joybtn" role="BUTTON_C" id="joystick_btn_C">C</button>
+                        <button class="d joybtn" role="BUTTON_D" id="joystick_btn_D">D</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="lib/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/dynamicaudio-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/nes.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/utils.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/cpu.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/keyboard.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/mappers.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/papu.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/ppu.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/rom.js" type="text/javascript" charset="utf-8"></script>
+<script src="source/ui.js" type="text/javascript" charset="utf-8"></script>
+<script>$('.joy').click(function () {
         console.log(777)
     })
     //音乐自动播放
@@ -42,12 +106,24 @@
         if (!isPlay && !media.paused) {
             media.pause();
         }
-    }</script><!-- <script src="lib/debug.js" type="text/javascript" charset="utf-8"></script> --><script type="text/javascript" charset="utf-8">var nes;
-    var url='roms/Contra/Contra1(U)30.nes'
+    }</script><!-- <script src="lib/debug.js" type="text/javascript" charset="utf-8"></script> -->
+<script type="text/javascript" charset="utf-8">var nes;
+    var url = 'roms/Contra/Contra1(U)30.nes'
     $(function () {
         nes = new JSNES({
             'ui': $('#emulator').JSNESUI({
-              url
+                url
             })
         });
-    });</script><div style="display:none"><script type="text/javascript" src="source/z_stat.js"></script></div></html>
+    });</script>
+<div style="display:none">
+    <script type="text/javascript" src="source/z_stat.js"></script>
+    <script>
+        var returnH = document.querySelector('.returnH');
+        returnH.addEventListener('click',()=>{
+            window.history.go(-1);
+        })
+    </script>
+</div>
+
+</html>

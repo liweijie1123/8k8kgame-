@@ -348,7 +348,7 @@
         {
             "name": "热血新纪录(日版)",
             "url": "/static/img/28.png",
-            "href": "/static/fcgame-master/index.html?value=",
+            "href": "/static/fcgame-master/index.html?value=/roms/rom/[001].NES",
             "type": [
                 {
                     "type": "PC"
@@ -492,7 +492,7 @@
         {
             "name": "热血物语(日版)",
             "url": "/static/img/37.png",
-            "href": "/static/fcgame-master/index.html?value=",
+            "href": "/static/fcgame-master/index.html?value=[001].NES",
             "type": [
                 {
                     "type": "PC"
