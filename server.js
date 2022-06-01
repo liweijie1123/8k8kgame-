@@ -35,7 +35,6 @@ app.get('/user', async (req, resp) => {
     fs.readFile('data/gamedata.json',(err,data)=>{
         if(!err){
             var userdata
-            // console.log(req.query);
             let gamedata = data.toString();
             fs.readFile('data/data.json',(err,datas)=>{
                 userdata   = datas.toString();
@@ -46,7 +45,6 @@ app.get('/user', async (req, resp) => {
                       gamedata.User = {data:userdata.data[i]};
                     }
                 }             
-                // console.log(gamedata)
                 resp.render('user',gamedata)
             })
 
@@ -59,8 +57,7 @@ app.get('/user', async (req, resp) => {
 app.get('/userCenter', async (req, resp) => {
     fs.readFile('data/gamedata.json',(err,data)=>{
         if(!err){
-            var userdata
-            // console.log(req.query);
+            var userdata;
             let gamedata = data.toString();
             fs.readFile('data/data.json',(err,datas)=>{
                 userdata   = datas.toString();
@@ -82,18 +79,22 @@ app.get('/userCenter', async (req, resp) => {
     })
 })
 app.get('/login', async (req, resp) => {
-    const data = await util.read('page/login.html')
+    const data = await util.read('page/login.html');
+    resp.end(data);
+})
+app.get('/img', async (req, resp) => {
+    const data = await util.read('page/img.html');
     resp.end(data);
 })
 app.get('/register', async (req, resp) => {
-    const data = await util.read('page/register.html')
+    const data = await util.read('page/register.html');
     resp.end(data);
 })
 
 app.post('/api/register', async (req, res) => {
-    fs.readFile('data/data.json', (err, data) => {
+    await fs.readFile('data/data.json',(err, data) => {
         let use = data.toString();
-        
+        console.log('shoudao');
         use = JSON.parse(use);
         for (var i = 0; i < use.data.length; i++) {
             if (use.data[i].username === req.body.username) {

@@ -13,7 +13,7 @@
         {
             "name": "超级玛丽",
             "url": "/static/img/2.png",
-            "href": "/static/fcgame-master/index.html?value=roms/like/Mario Bros.nes"
+            "href": "/static/fcgame-master/index.html?value=roms/rom/supermali.nes"
         },
         {
             "name": "忍者神龟",
@@ -33,13 +33,13 @@
         {
             "name": "BATTLE CITY",
             "url": "/static/img/6.png",
-            "href": "/static/fcgame-master/index.html?value=roms/rom1/(Ch)Tank1990.nes"
+            "href": "/static/fcgame-master/index.html?value=roms/rom/(Ch) Missile Tank.nes"
         },
 
         {
             "name": "热血格斗传说",
             "url": "/static/img/8.png",
-            "href": "/static/fcgame-master/index.html?value=roms/lj65/lj65.nes"
+            "href": "/static/fcgame-master/index.html?value=roms/rom/ald.nes"
         }
     ],
     "HotGBA": [
@@ -252,7 +252,7 @@
         {
             "name": "BATTLE CITY",
             "url": "/static/img/6.png",
-            "href": "/static/fcgame-master/index.html?value=",
+            "href": "/static/fcgame-master/index.html?value=roms/Contra/Contra1(U)30F.nes",
             "type": [
                 {
                     "type": "FC"
@@ -268,7 +268,7 @@
         {
             "name": "SLAND",
             "url": "/static/img/7.png",
-            "href": "/static/fcgame-master/index.html?value=",
+            "href": "/static/fcgame-master/index.html?value=roms/rom1/1942.nes",
             "type": [
                 {
                     "type": "FC"

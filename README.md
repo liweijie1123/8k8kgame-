@@ -1,32 +1,47 @@
-##8k8K游戏黄页##
+**8K8K游戏黄页**
 
-功能：
+**项目成员**
 
-点赞
-收藏
-评论
+| 项目成员             | 工作 |
+| -------------------- | ---- |
+| 李炜杰 2020210308022 | 组长 |
+| 周熙皓 2020212205010 |      |
 
-更多
-json 改一下
+**项目描述**
 
-## new_gav_demo
-#采用的技术和方法
-1.整个页面运用了Bootstrap5来经行页面的基本布局。
-2.采用了art-template的模板引擎来进行页面的渲染。
-3.json文件运用了jquery的$JSON方法来加载。
+实现一个在线的游戏网站，提供各种 FC 小游戏。
 
+**界面设计**
 
-宝塔：username: fp5gftcl
-password: 57d3f536
+pc端
+
+移动端
+
+**数据结构**
+
+使用的是json存储
+
+用户的json格式为
+
+"username":"123","password":"123","nickname":"李炜杰","headimg":"static/img/headimg/1.jpeg"
+
+游戏数据的json格式为
+
+```
 {
-    "data": [
-        {
-            "username": "123",
-            "password": "123",
-            "nickname":"李炜杰",
-            "headimg":"static/img/headimg/1.jpeg"
-        }
-    ]
-}
-
-
+            "name": "魂斗罗",
+            "url": "/static/img/1.png",
+            "href": "/static/fcgame-master/index.html?value=roms/Contra/Contra1(U)30.nes",
+            "type": [
+                {
+                    "type": "FC"
+                },
+                {
+                    "type": "射击"
+                },
+                {
+                    "type": "魂斗罗"
+                }
+            ]
+        },
+```

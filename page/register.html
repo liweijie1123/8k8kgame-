@@ -88,6 +88,7 @@
   </div>
 <script src="/static/js/login.js"></script>
 <script>
+;
   layui.use(['form', 'layedit', 'laydate'], function () {
     var form = layui.form
       , layer = layui.layer
@@ -113,14 +114,15 @@
           if(res.code===5000){
             layer.msg(res.msg);
             location.href = '/login'
+            var flag = 1;
           }
           else{
             layer.msg(res.msg);
+            var flag = 1;
           }
         }
       })
     }
-      return false;
     });
 
   })
