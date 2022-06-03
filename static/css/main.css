@@ -3,10 +3,23 @@
         text-align: center;
         text-decoration: none;
     }
+
+    .table>span {
+        display: none;
+    }
+
+    .table {
+        margin-top: 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
     .returnhome {
         margin: 10px 20px;
         width: 10%;
     }
+
     .headimg {
         height: 32px;
         display: flex;
@@ -420,16 +433,22 @@
     .table {
         margin-top: 0;
         margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .card-caption>a {
         color: black;
         text-decoration: none;
         font-size: larger;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .card-caption {
         margin-top: 5px;
+        font-size: 10px;
     }
 
     .card-blog {
@@ -917,7 +936,8 @@
         text-align: center;
         text-decoration: none;
     }
-    .returnhome{
+
+    .returnhome {
         display: none;
     }
 }

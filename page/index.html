@@ -101,7 +101,7 @@
           <div class="row">
             <ul class="tm_list">
               {{each HotH5}}
-              <li class="hot-li"><a href=""><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a>
+              <li class="hot-li"><a href="{{$value.href}}"><img src="{{$value.url}}" alt="" class="tm_list-img">{{$value.name}}</a>
               </li>
               {{/each}}
             </ul>
@@ -115,8 +115,8 @@
             </h3>
             <div class="row">
               {{each allGame}}
-              <div class="col-md-3 col-xs-6">
-                <div class="card card-blog" style="height: 350px;">
+              <div class="col-md-3 col-4">
+                <div class="card card-blog" >
                   <a class="game" href="{{$value.href}}">
                     <div class="card-image">
                       <img src="{{$value.url}}" alt="" class="img img-raised" height="233px">
